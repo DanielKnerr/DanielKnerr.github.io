@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
+            rel="stylesheet"
+        />
+        <link href="project.css" rel="stylesheet" />
+        <link href="../common.css" rel="stylesheet" />
+        <script src="project.js" defer></script>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <input style="display: none;" id="__folder" value="clark" />
+
+        <a href="../index.html" id="header"> <div></div> </a>
+
+        <div id="overlay" style="display: none;" onclick="closeOverlay();">
+            <div id="overlay--close" onclick="closeOverlay();"></div>
+            <img
+                id="overlay--image"
+                class="overlay--image"
+                src=""
+                onclick="preventCloseOverlay(event);"
+            />
+        </div>
+        <div id="main">
+            <span id="main--name">Clark</span>
+            <span id="main--beschreibung"
+                >Clark ist eine Buchverwaltungs Software für das Web.<br />
+                Sie erlaubt dem Nutzer Bücher, Autoren und Listen zu
+                verwalten.</span
+            >
+            <span id="main--technologien"
+                >Technologien: <a href="https://reactjs.org/">ReactJS</a>,
+                <a href="https://nodejs.org/de/">NodeJS</a></span
+            >
+            <a id="main--link" href="https://github.com/DanielKnerr/clark-frontend">Link zum Quelltext</a>
+
+            <span id="main--bilder--heading">Bilder:</span>
+            <img
+                class="main--bild"
+                src="images/clark/1.png"
+                onclick="openFullImageView('1');"
+            />
+            <img
+                class="main--bild"
+                src="images/clark/2.png"
+                onclick="openFullImageView('2');"
+            />
+            <img
+                class="main--bild"
+                src="images/clark/3.png"
+                onclick="openFullImageView('3');"
+            />
+            <img
+                class="main--bild"
+                src="images/clark/4.png"
+                onclick="openFullImageView('4');"
+            />
+        </div>
+    </body>
+</html>

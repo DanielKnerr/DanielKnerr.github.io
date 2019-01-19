@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
+            rel="stylesheet"
+        />
+        <link href="project.css" rel="stylesheet" />
+        <link href="../common.css" rel="stylesheet" />
+        <script src="project.js" defer></script>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <input style="display: none;" id="__folder" value="beno" />
+
+        <a href="../index.html" id="header"> <div></div> </a>
+
+        <div id="overlay" style="display: none;" onclick="closeOverlay();">
+            <div id="overlay--close" onclick="closeOverlay();"></div>
+            <img
+                id="overlay--image"
+                class="overlay--image overlay--image--small"
+                src=""
+                onclick="preventCloseOverlay(event);"
+            />
+        </div>
+        <div id="main">
+            <span id="main--name">Beno</span>
+            <span id="main--beschreibung"
+                >Beno ist ein Mandelbrot Generator.</span
+            >
+            <span id="main--technologien"
+                >Technologien:
+                <a href="http://www.libpng.org/pub/png/libpng.html">libpng</a>,
+                <a href="https://www.nongnu.org/pngpp/">png++</a>,
+                <a href="https://www.geforce.com/hardware/technology/cuda"
+                    >CUDA</a
+                >
+            </span>
+            <a id="main--link" href="https://github.com/DanielKnerr/beno">Link zum Quelltext</a>
+
+            <span id="main--bilder--heading">Bilder:</span>
+            <img
+                class="main--bild main--bild--small"
+                src="images/beno/1.png"
+                onclick="openFullImageView('1');"
+            />
+            <img
+                class="main--bild main--bild--small"
+                src="images/beno/2.png"
+                onclick="openFullImageView('2');"
+            />
+            <img
+                class="main--bild main--bild--small"
+                src="images/beno/3.png"
+                onclick="openFullImageView('3');"
+            />
+            <img
+                class="main--bild main--bild--small"
+                src="images/beno/4.png"
+                onclick="openFullImageView('4');"
+            />
+        </div>
+    </body>
+</html>
