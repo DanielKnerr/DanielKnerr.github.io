@@ -63,6 +63,10 @@ body {
     width: 600px;
 }
 
+#main--beschreibung > a {
+    color: #2468cf;
+}
+
 #main--technologien {
     margin-top: 40px;
     display: block;
