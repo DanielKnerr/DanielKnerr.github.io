@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
+            rel="stylesheet"
+        />
+        <link href="project.css" rel="stylesheet" />
+        <link href="../common.css" rel="stylesheet" />
+        <script src="project.js" defer></script>
+        <meta charset="UTF-8" />
+        <title>Daniel Knerr: Beno</title>
+    </head>
+    <body>
+        <input style="display: none;" id="__folder" value="beno_gui" />
+
+        <a href="../index.html" id="header"> <div></div> </a>
+
+        <div id="overlay" style="display: none;" onclick="closeOverlay();">
+            <div id="overlay--close" onclick="closeOverlay();"></div>
+            <img
+                id="overlay--image"
+                class="overlay--image overlay--image--small"
+                src=""
+                onclick="preventCloseOverlay(event);"
+                style="width: 1280px;"
+            />
+        </div>
+        <div id="main">
+            <span id="main--name">Beno GUI</span>
+            <span id="main--beschreibung">
+                Beno GUI bietet eine einfach zu bedienende Oberfläche für <a href="beno.html">Beno</a>.
+            </span>
+            <span class="main--list">
+                Technologien:
+                <a href="https://de.wikipedia.org/wiki/JavaFX">JavaFX</a>,
+                <a href="https://openjdk.java.net/projects/openjfx/">OpenJFX</a>
+            </span>
+            <span style="margin-top: 10px;" class="main--list">
+                    Verwandte Projekte:
+                    <a href="beno.html">Beno</a>
+                </span>
+            <a target="_blank" rel="noopener noreferrer" id="main--link" href="https://github.com/DanielKnerr/beno-gui">Link zum Quelltext</a>
+
+            <span id="main--bilder--heading">Bild:</span>
+            <img
+                class="main--bild main--bild--small"
+                src="images/beno_gui/1.png"
+                onclick="openFullImageView('1');"
+            />
+        </div>
+    </body>
+</html>

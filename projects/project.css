@@ -67,7 +67,7 @@ body {
     color: #2468cf;
 }
 
-#main--technologien {
+.main--list {
     margin-top: 40px;
     display: block;
     color: #ffffff;
@@ -75,7 +75,7 @@ body {
     font-size: 18px;
 }
 
-#main--technologien > a {
+.main--list > a {
     color: #2468cf;
     margin-left: 6px;
 }
